@@ -1,0 +1,113 @@
+/* importing google font */
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Josefin Sans", sans-serif;
+  background-color: #dcf0fb;
+}
+h1 {
+  color: #0075dd;
+  font-size: 3.5rem;
+  margin-bottom: 2rem;
+}
+main {
+  width: 60%;
+  background-color: white;
+  padding: 3rem 8rem;
+  border-radius: 1rem;
+  box-shadow: 0 1rem 1rem -0.7rem rgba(0, 0, 0, 0.4);
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  font-size: 2rem;
+  margin: 2.5rem 0;
+}
+
+input {
+  cursor: pointer;
+}
+
+label {
+  color: #444;
+}
+
+h2 {
+  font-size: 3rem;
+  margin: 1rem 0 4rem 0;
+  font-weight: 400;
+}
+
+button#submit,
+.btn {
+  border-radius: 0.3rem;
+  outline: none;
+  border: none;
+  padding: 7px 13px;
+  font-size: 2rem;
+  border: none;
+  margin: auto;
+  background-color: #03aaff;
+  color: white;
+  cursor: pointer;
+}
+
+button#submit {
+  margin-top: 4rem;
+  position: relative;
+  left: 80%;
+}
+
+button#submit:hover,
+.btn:hover {
+  background-color: #0075dd;
+}
+
+#showScore {
+  background-color: #ced5d6;
+  padding: 3rem 4rem;
+  margin-top: 3rem;
+  box-shadow: 0 1rem 1rem -0.7rem rgba(0, 0, 0, 0.4);
+}
+
+.score {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  main {
+    width: 80%;
+    padding: 1.5rem;
+  }
+
+  button#submit {
+    left: 70%;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  label {
+    font-size: 1.5rem;
+  }
+}
